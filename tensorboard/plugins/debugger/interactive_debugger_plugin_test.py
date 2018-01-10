@@ -686,9 +686,9 @@ class InteractiveDebuggerPluginTest(tf.test.TestCase):
     self._serverGet('comm', {'pos': 1})
 
     for op_name in ('a', 'b', 'c', 'x', 'y'):
-      op_traceback_reponse = self._serverGet(
+      op_traceback_response = self._serverGet(
           'source_code', {'mode': 'op_traceback', 'op_name': op_name})
-      response_data = self._deserializeResponse(op_traceback_reponse)
+      response_data = self._deserializeResponse(op_traceback_response)
       found_current_file = False
       for file_path, lineno in response_data['op_traceback'][op_name]:
         self.assertGreater(lineno, 0)

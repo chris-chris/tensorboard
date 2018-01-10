@@ -358,7 +358,7 @@ class InteractiveDebuggerDataStreamHandler(
             debug_op) in self._run_states.get_breakpoints()
 
 
-# TODO(cais): Consider moving to a seperate python module.
+# TODO(cais): Consider moving to a separate python module.
 class SourceManager(object):
   """Manages source files and tracebacks involved in the debugged TF program.
 

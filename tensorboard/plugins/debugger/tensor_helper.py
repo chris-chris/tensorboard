@@ -134,7 +134,7 @@ def array_to_base64_png(array):
 
   Returns:
     A base64-encoded string the image. The image is grayscale if the array is
-    2D. The image is RGB color if the image is 3D with lsat dimension equal to
+    2D. The image is RGB color if the image is 3D with last dimension equal to
     3.
 
   Raises:
